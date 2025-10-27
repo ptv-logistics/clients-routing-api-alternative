@@ -41,7 +41,7 @@ import com.ptvgroup.developer.client.routing.ApiClient;
   TrafficEvent.JSON_PROPERTY_RELATED_EVENT_INDEX,
   TrafficEvent.JSON_PROPERTY_POLYLINE
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-08-29T06:49:06.721293671Z[Etc/UTC]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-10-27T08:43:14.332770577Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class TrafficEvent {
   public static final String JSON_PROPERTY_DELAY = "delay";
   private Integer delay;

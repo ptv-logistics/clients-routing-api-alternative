@@ -38,7 +38,7 @@ import com.ptvgroup.developer.client.routing.ApiClient;
   EmissionOptions.JSON_PROPERTY_DEFAULT_CONSUMPTION,
   EmissionOptions.JSON_PROPERTY_ISO14083_EMISSION_FACTORS_VERSION
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-08-29T06:49:06.721293671Z[Etc/UTC]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-10-27T08:43:14.332770577Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class EmissionOptions {
   public static final String JSON_PROPERTY_CALCULATION_METHODS = "calculationMethods";
   private String calculationMethods;

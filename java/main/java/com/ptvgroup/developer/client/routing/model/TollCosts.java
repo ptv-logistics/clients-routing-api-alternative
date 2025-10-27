@@ -42,16 +42,16 @@ import com.ptvgroup.developer.client.routing.ApiClient;
   TollCosts.JSON_PROPERTY_COUNTRIES,
   TollCosts.JSON_PROPERTY_CONTAINS_APPROXIMATED_SECTIONS
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-08-29T06:49:06.721293671Z[Etc/UTC]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-10-27T08:43:14.332770577Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class TollCosts {
   public static final String JSON_PROPERTY_PRICES = "prices";
-  private List<TollPrice> prices = new ArrayList<>();
+  private List<TollPrice> prices;
 
   public static final String JSON_PROPERTY_CONVERTED_PRICE = "convertedPrice";
   private TollPrice convertedPrice;
 
   public static final String JSON_PROPERTY_COUNTRIES = "countries";
-  private List<TollCostsByCountry> countries = new ArrayList<>();
+  private List<TollCostsByCountry> countries;
 
   public static final String JSON_PROPERTY_CONTAINS_APPROXIMATED_SECTIONS = "containsApproximatedSections";
   private Boolean containsApproximatedSections;
