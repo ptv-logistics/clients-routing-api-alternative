@@ -35,7 +35,7 @@ import com.ptvgroup.developer.client.routing.ApiClient;
 @JsonPropertyOrder({
   BorderEvent.JSON_PROPERTY_COUNTRY_CODE
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-10-27T08:43:14.332770577Z[Etc/UTC]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-11-05T10:39:30.721735356Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class BorderEvent {
   public static final String JSON_PROPERTY_COUNTRY_CODE = "countryCode";
   private String countryCode;

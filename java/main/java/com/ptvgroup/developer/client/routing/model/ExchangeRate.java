@@ -36,7 +36,7 @@ import com.ptvgroup.developer.client.routing.ApiClient;
   ExchangeRate.JSON_PROPERTY_CURRENCY,
   ExchangeRate.JSON_PROPERTY_RATE
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-10-27T08:43:14.332770577Z[Etc/UTC]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-11-05T10:39:30.721735356Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class ExchangeRate {
   public static final String JSON_PROPERTY_CURRENCY = "currency";
   private String currency;
