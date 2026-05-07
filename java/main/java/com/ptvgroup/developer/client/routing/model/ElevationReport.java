@@ -30,77 +30,75 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 import com.ptvgroup.developer.client.routing.ApiClient;
 /**
- * Use these coordinates for matching to the nearest road. This is useful if the waypoint should not be matched to the nearest possible road but to some road further away, e.g. garage exit at a different road.
+ * Provides information on the topography of the route or leg, i.e. the total ascent and descent. Elevation‑based metrics represent approximate values and may differ from real‑world measurements.  For each leg the constraint ascent − descent &#x3D; net elevation difference (last point minus first point) is maintained. Because of this, the sum of ascent or descent values across all legs may slightly exceed the corresponding route total.
  */
 @JsonPropertyOrder({
-  RoadAccess.JSON_PROPERTY_LATITUDE,
-  RoadAccess.JSON_PROPERTY_LONGITUDE
+  ElevationReport.JSON_PROPERTY_ASCENT,
+  ElevationReport.JSON_PROPERTY_DESCENT
 })
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-05-07T12:20:41.325450319Z[Etc/UTC]", comments = "Generator version: 7.8.0")
-public class RoadAccess {
-  public static final String JSON_PROPERTY_LATITUDE = "latitude";
-  private Double latitude;
+public class ElevationReport {
+  public static final String JSON_PROPERTY_ASCENT = "ascent";
+  private Integer ascent;
 
-  public static final String JSON_PROPERTY_LONGITUDE = "longitude";
-  private Double longitude;
+  public static final String JSON_PROPERTY_DESCENT = "descent";
+  private Integer descent;
 
-  public RoadAccess() { 
+  public ElevationReport() { 
   }
 
-  public RoadAccess latitude(Double latitude) {
-    this.latitude = latitude;
+  public ElevationReport ascent(Integer ascent) {
+    this.ascent = ascent;
     return this;
   }
 
   /**
-   * The latitude value in degrees (WGS84/EPSG:4326) from south to north.
-   * minimum: -90
-   * maximum: 90
-   * @return latitude
+   * Total ascent of the route or leg [m], estimated from sampled elevation data along the route.
+   * minimum: 0
+   * @return ascent
    */
   @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_LATITUDE)
+  @JsonProperty(JSON_PROPERTY_ASCENT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public Double getLatitude() {
-    return latitude;
+  public Integer getAscent() {
+    return ascent;
   }
 
 
-  @JsonProperty(JSON_PROPERTY_LATITUDE)
+  @JsonProperty(JSON_PROPERTY_ASCENT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setLatitude(Double latitude) {
-    this.latitude = latitude;
+  public void setAscent(Integer ascent) {
+    this.ascent = ascent;
   }
 
 
-  public RoadAccess longitude(Double longitude) {
-    this.longitude = longitude;
+  public ElevationReport descent(Integer descent) {
+    this.descent = descent;
     return this;
   }
 
   /**
-   * The longitude value in degrees (WGS84/EPSG:4326) from west to east.
-   * minimum: -180
-   * maximum: 180
-   * @return longitude
+   * Total descent of the route or leg [m], estimated from sampled elevation data along the route.
+   * minimum: 0
+   * @return descent
    */
   @javax.annotation.Nonnull
-  @JsonProperty(JSON_PROPERTY_LONGITUDE)
+  @JsonProperty(JSON_PROPERTY_DESCENT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public Double getLongitude() {
-    return longitude;
+  public Integer getDescent() {
+    return descent;
   }
 
 
-  @JsonProperty(JSON_PROPERTY_LONGITUDE)
+  @JsonProperty(JSON_PROPERTY_DESCENT)
   @JsonInclude(value = JsonInclude.Include.ALWAYS)
-  public void setLongitude(Double longitude) {
-    this.longitude = longitude;
+  public void setDescent(Integer descent) {
+    this.descent = descent;
   }
 
 
   /**
-   * Return true if this RoadAccess object is equal to o.
+   * Return true if this ElevationReport object is equal to o.
    */
   @Override
   public boolean equals(Object o) {
@@ -110,22 +108,22 @@ public class RoadAccess {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    RoadAccess roadAccess = (RoadAccess) o;
-    return Objects.equals(this.latitude, roadAccess.latitude) &&
-        Objects.equals(this.longitude, roadAccess.longitude);
+    ElevationReport elevationReport = (ElevationReport) o;
+    return Objects.equals(this.ascent, elevationReport.ascent) &&
+        Objects.equals(this.descent, elevationReport.descent);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(latitude, longitude);
+    return Objects.hash(ascent, descent);
   }
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class RoadAccess {\n");
-    sb.append("    latitude: ").append(toIndentedString(latitude)).append("\n");
-    sb.append("    longitude: ").append(toIndentedString(longitude)).append("\n");
+    sb.append("class ElevationReport {\n");
+    sb.append("    ascent: ").append(toIndentedString(ascent)).append("\n");
+    sb.append("    descent: ").append(toIndentedString(descent)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -173,14 +171,14 @@ public class RoadAccess {
 
     StringJoiner joiner = new StringJoiner("&");
 
-    // add `latitude` to the URL query string
-    if (getLatitude() != null) {
-      joiner.add(String.format("%slatitude%s=%s", prefix, suffix, URLEncoder.encode(ApiClient.valueToString(getLatitude()), StandardCharsets.UTF_8).replaceAll("\\+", "%20")));
+    // add `ascent` to the URL query string
+    if (getAscent() != null) {
+      joiner.add(String.format("%sascent%s=%s", prefix, suffix, URLEncoder.encode(ApiClient.valueToString(getAscent()), StandardCharsets.UTF_8).replaceAll("\\+", "%20")));
     }
 
-    // add `longitude` to the URL query string
-    if (getLongitude() != null) {
-      joiner.add(String.format("%slongitude%s=%s", prefix, suffix, URLEncoder.encode(ApiClient.valueToString(getLongitude()), StandardCharsets.UTF_8).replaceAll("\\+", "%20")));
+    // add `descent` to the URL query string
+    if (getDescent() != null) {
+      joiner.add(String.format("%sdescent%s=%s", prefix, suffix, URLEncoder.encode(ApiClient.valueToString(getDescent()), StandardCharsets.UTF_8).replaceAll("\\+", "%20")));
     }
 
     return joiner.toString();
