@@ -43,7 +43,7 @@ import com.ptvgroup.developer.client.routing.ApiClient;
   Waypoint.JSON_PROPERTY_MANIPULATE,
   Waypoint.JSON_PROPERTY_COMBINED_TRANSPORT
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-05-07T12:20:41.325450319Z[Etc/UTC]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-05-11T12:02:42.197864074Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class Waypoint {
   public static final String JSON_PROPERTY_NAME = "name";
   private String name;
