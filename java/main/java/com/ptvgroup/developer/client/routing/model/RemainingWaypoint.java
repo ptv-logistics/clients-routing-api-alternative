@@ -45,7 +45,7 @@ import com.ptvgroup.developer.client.routing.ApiClient;
   RemainingWaypoint.JSON_PROPERTY_SCHEDULE_VIOLATIONS,
   RemainingWaypoint.JSON_PROPERTY_VIOLATED
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-08-11T11:05:47.711229037Z[Etc/UTC]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-08-18T08:05:10.337405568Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class RemainingWaypoint {
   public static final String JSON_PROPERTY_NAME = "name";
   private String name;

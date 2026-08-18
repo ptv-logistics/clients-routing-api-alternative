@@ -41,7 +41,7 @@ import com.ptvgroup.developer.client.routing.ApiClient;
   ReachableLocations.JSON_PROPERTY_UNREACHABLE,
   ReachableLocations.JSON_PROPERTY_WARNINGS
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-08-11T11:05:47.711229037Z[Etc/UTC]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-08-18T08:05:10.337405568Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class ReachableLocations {
   public static final String JSON_PROPERTY_REACHABLE = "reachable";
   private List<ReachableLocation> reachable;

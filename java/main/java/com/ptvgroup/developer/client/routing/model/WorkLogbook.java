@@ -39,7 +39,7 @@ import com.ptvgroup.developer.client.routing.ApiClient;
   WorkLogbook.JSON_PROPERTY_ACCUMULATED_DRIVING_TIME_SINCE_LAST_DAILY_REST,
   WorkLogbook.JSON_PROPERTY_ACCUMULATED_TRAVEL_TIME_SINCE_LAST_DAILY_REST
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-08-11T11:05:47.711229037Z[Etc/UTC]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-08-18T08:05:10.337405568Z[Etc/UTC]", comments = "Generator version: 7.8.0")
 public class WorkLogbook {
   public static final String JSON_PROPERTY_LAST_TIME_THE_DRIVER_WORKED = "lastTimeTheDriverWorked";
   private String lastTimeTheDriverWorked;
